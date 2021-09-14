@@ -28,26 +28,30 @@
             <section class="principal" id="principal">
                 <h2 class="titulo">Sobre você</h2>
                 <img src="Imagens/foto.jpg" class="foto" alt="Foto de perfil">
-                <p><br><br>Me chamo Victor Amaro Gonaçalves Tsutsumi, estou no 3º período de Sistemas de Informação e sou apaixonado 
+                <p><br><br>Me chamo Victor Amaro Gonçalves Tsutsumi, estou no 3º período de Sistemas de Informação e sou apaixonado 
                     por front-end. As tecnologias que entendo melhor são HTML e CSS, cujas quais aprendi através dos cursos da Alura.
                     Estou pronto para aprender novas tecnologias e ajudar as pessoas da maneira que puder!
                 </p>
             </section>
 
-
+            <script src="index.js"></script>
 
             <section id="info">
                 <h1 class="titulo2">Conhecimentos</h1>
                     <div class="info">
                     <nav>
                         <ul>
-                            <li class="itens"><a>Educação</a></li>
-                            <li class="itens"><a>Habilidades</a></li>
-                            <li class="itens"><a>Soft Skills</a></li>
-                            <li class="topico"><p>2020/1 - Presente | Sistemas de Informação</p></li>
-                            <li><p>Tecnologias: HTML, CSS, C, Git e Github</p></li>
-                            <li><p>Pontual e comunicativo</p></li>
+                            <li class="itens"><button onclick=" document.getElementById('topico').innerHTML = 'Sistemas de Informação - UFU';
+                                document.getElementById('topico2').innerHTML = '2020/1 - Presente';">Educação</button>
 
+                            <li class="itens"><button onclick=" document.getElementById('topico').innerHTML = 'Tecnologias: HTML, CSS, C e JavaScript(básico)';
+                                document.getElementById('topico2').innerHTML = 'Open Source: Git, Github,';">Habilidades</button></li>
+
+                            <li class="itens"><button onclick=" document.getElementById('topico').innerHTML = 'Flexibilidade, pontualidade, foco';
+                                document.getElementById('topico2').innerHTML = 'Comunicativo, positivista e colaborativo';">Soft Skills</button></li>
+            
+                            <li><p id="topico">Sistemas de Informação - UFU</p></li>
+                            <li><p id="topico2">2020/1 - Presente</p></li>
                         </ul>
                     </nav>
                 </div>
@@ -58,7 +62,7 @@
                 <img src="Imagens/agenda_1.png" class="agenda" alt="Desenho de uma agenda">
                 <a class="first-agenda">Email: victoragtsutsumi@gmail.com</a>
                 <a class="text-agenda">Telefone: (34) 99261-6618</a>
-                <a class="text-agenda" href="https://www.linkedin.com/in/victor-tsutsumi-2b7176219/">Linkedin : https://www.linkedin.com/in/victor-tsutsumi-2b7176219/</a>
+                <a class="text-agenda" id="link" href="https://www.linkedin.com/in/victor-tsutsumi-2b7176219/">Linkedin : https://www.linkedin.com/in/victor-tsutsumi-2b7176219/</a>
             </section>
         </main>
 

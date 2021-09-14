@@ -62,7 +62,7 @@ main {
 }
 
 .principal p { 
-    width: 70%;
+    width: 79%;
     display: inline-block;
     vertical-align: top;
     font-size: 22px;
@@ -83,19 +83,19 @@ main {
     border: 2px solid #036E6E;
     border-radius: 10px;
     background: #036E6E;
-    padding: 30px;
+    padding: 30px 45px 30px 0;
 }
 
 .itens {
     box-sizing: border-box;
     border: 2px solid #05ADAD;
     background: #05ADAD;
-    display: inline;
-    margin: 0 0 0 70px;
+    display: inline-block;
+    margin: 0 0 30px 70px;
     text-align: center;
     border-radius: 10px;
     font-size: 35px;
-    padding: 10px 30px;
+    padding: 10px 30px 10px 30px;
     color: #FBFBFB;
     left: 0;
     position: relative;
@@ -103,9 +103,21 @@ main {
     font-family: 'Roboto', sans-serif;
 }
 
+button {
+    text-align:center;
+    background: #05ADAD;
+    cursor: pointer;
+    border: none;
+    font-size: 35px;
+    color: white
+}
+
+button:hover {
+    color: black;
+}
+
 .topico {
     display: block;
-    padding-top: 40px;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
 }
@@ -118,7 +130,7 @@ main {
     font-size: 20px;
     padding-left: 70px;
     color: #fbfbfb;
-    margin-top: 5px;
+    padding-top: 10px;
     font-family: 'Roboto', sans-serif;
 
 }
@@ -130,6 +142,16 @@ main {
 .contato {
     padding-bottom: 20px;
     margin-bottom: 20px;
+}
+
+#link{
+    color: black;
+    text-decoration: none;
+}
+
+#link:hover{
+    color: blue;
+    text-decoration: underline;
 }
 
 .agenda {
@@ -170,4 +192,6 @@ footer p {
 footer img{
     width: 3%;
 }
+
+
 
