@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF–8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <h1>Página para mudar o titulo de<br>
+                h2 com javascript
+            </h1>
+            <h2>Clique para mudar esse título</h2>
+            <h2>Clique para mudar esse título</h2>
+            <h2>Clique para mudar esse título</h2>
+            <h2>Clique para mudar esse título</h2>
+            <script>
+                // function mostraMsg() {
+                //     alert('Hello');
+                // }
+                // window.onload = mostraMsg;
+                document.addEventListener('DOMContentLoaded', function() {
+                    alert('Hello" árvore DOM carregada!')
+                    const nodeH1 = document.querySelector("h1");
+                    nodeH1.addEventListener("click", alteraConteudo);
+                });
+
+                function alteraConteudo(){
+                    const nodesH2 = document.querySelectorAll("h2");
+                    for (let node of nodesH2)
+                        node.textContent = "o titulo foi trocado"
+                }
+            </script>
+        </main>
+    </body>
+
+</html>
